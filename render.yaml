@@ -2,6 +2,6 @@ services:
   - type: web
     name: trainingbot
     buildCommand: pip install -r requirements.txt
-    startCommand: gunicorn training:training
+    startCommand: gunicorn app:app
     runtime: python
   
