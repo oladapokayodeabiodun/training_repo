@@ -7,7 +7,7 @@ VERIFY_TOKEN = "Training@1089"
 
 @app.route('/')
 def webhook():
-    return 'Training Chat is Connected'
+    return "Training Chat is Connected"
 
 
 @app.route('/webhook', methods=['GET'])
