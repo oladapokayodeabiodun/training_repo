@@ -6,12 +6,13 @@ VERIFY_TOKEN = "Training@1089"
 
 
 @app.route('/')
-def webhook():
+def home():
     return "Training Chat is Connected"
 
 
 @app.route('/webhook', methods=['GET'])
-def verify():
+def verify_webhook():
+    
     mode = request.args.get("hub.mode")
     token = request.args.get("hub.verify_token")
     challenge = request.args.get("hub.challenge")
@@ -26,7 +27,7 @@ def verify():
 
 
 @app.route('/webhook', methods=['POST'])
-def webhook():
+def receive_webhook():
     data = request.get_json()
 
     print("Webhook Event:")
