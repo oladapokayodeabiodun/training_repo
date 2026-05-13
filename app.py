@@ -23,7 +23,7 @@ def verify_webhook():
         else:
             return "Verification failed", 403
 
-    return "Welcome webhook", 200
+    return "Welcome Accolad Konzepts Training BOT", 200
 
 
 @app.route('/webhook', methods=['POST'])
