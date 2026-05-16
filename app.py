@@ -67,7 +67,7 @@ def send_whatsapp_message(to, text):
         "Content-Type": "application/json"
     }
     data = {
-        "messaging_product: "whatsapp",
+        "messaging_product": "whatsapp",
         "to": to,
         "text": {
             "body": text
